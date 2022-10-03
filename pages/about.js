@@ -1,17 +1,14 @@
-import Head from "next/head";
+import Meta from "../components/Meta";
 
 const about = () => {
   return (
     <div>
-      <Head>
-        <title>About</title>
-        <meta name="keywords" content="news" />
-      </Head>
       <div>
+        <Meta title="About" />
         <h1>About</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-          quod.
+          This page could work in a perfect world, but it doesn&apos;t.
+          It&apos;s a work in progress... I&apos;m working on it.
         </p>
       </div>
     </div>
