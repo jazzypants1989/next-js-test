@@ -7,7 +7,7 @@ import Meta from "../../../components/Meta";
 const article = ({ post }) => {
   return (
     <div>
-      <Meta title={post.title} description={post.body} />
+      <Meta title={post.title} description={post.body} keywords={post.body} />
       Check out this hot news:
       <h1>{post.title}</h1>
       <p>{post.body}</p>
@@ -28,6 +28,7 @@ export const getStaticProps = async (context) => {
     props: {
       post,
     },
+    revalidate: 5,
   };
 };
 
